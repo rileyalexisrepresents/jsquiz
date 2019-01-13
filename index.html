@@ -5,13 +5,22 @@
 </head>
 <body>
   <script>
+var correct;
+var incorrect;
+var question;
+var input;
+var answer;
+    
 var start= function(){
-var correct = 0;
-var incorrect = 0;
-var question = "none";
-var input = "none";
-var answer = "none";
+ correct = 0
+ incorrect = 0;
+ question = "none";
+ input = "none";
+ answer = "none";
+  askquestions()
 }
+
+
 var ask = function(){
 input = prompt(question);
 };
@@ -24,24 +33,29 @@ incorrect = incorrect+1;
 alert("incorrect");
 }
 }
+
 var lazy = function(){
 ask();
 score();
 };
+     
+function askquestions () {
 alert("welcome to my quiz enjoy my questions follow me on insta at missrileyl")
 question = "whats up";
 answer = "the sky";
 lazy ();
 
-question="whats my insta user?";
-answer="missrileyl";
+question="what year is it?";
+answer="2019";
 lazy ();
 
 question= "what question number is this?"
 answer="3"
 lazy();
 
-alert("well done, you got" + correct + "out of 10");
+alert("well done, you got" + correct + "out of 3");
+}   
+
   </script>
   
 <button onclick="start()">play</button>
