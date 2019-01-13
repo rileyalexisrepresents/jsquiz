@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jsquiz</title>
+<script src="quiz.js"></script>
+</head>
+<body>
+var start= function(){
+var correct = 0;
+var incorrect = 0;
+var question = "none";
+var input = "none";
+var answer = "none";
+}
+var ask = function(){
+input = prompt(question);
+};
+var score = function(){
+if(input == answer){
+correct = correct+1;
+alert("correct");
+}else{
+incorrect = incorrect+1;
+alert("incorrect");
+}
+}
+var lazy = function(){
+ask();
+score();
+};
+alert("welcome to my quiz enjoy my questions follow me on insta at missrileyl")
+question = "whats up";
+answer = "the sky";
+lazy ();
+
+question="whats my insta user?";
+answer="missrileyl";
+lazy ();
+
+question= "what question number is this?"
+answer="3"
+lazy();
+
+alert("well done, you got" + correct + "out of 10");
+
+<button onClick="start()">play</button>
+</body>
+</html>
